@@ -1,11 +1,16 @@
 import React from "react";
 import "./home.css";
+import Waves from "./components/waves.jsx";
+import Text from "./components/textanim.jsx";
 
 
 function Navbar() {
     
   return (
     
+    
+    
+    <>
     
     <nav className="navbar">
       <div className="navbar-logo">
@@ -22,6 +27,15 @@ function Navbar() {
         <a href="/login">Register</a>
       </div>
     </nav>
+
+    <Text />
+
+    <div style={{ position: "relative", minHeight: "100vh" }}>
+      
+      <waves />
+    </div>
+    </>
+    
   );
 }
 
