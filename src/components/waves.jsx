@@ -10,15 +10,15 @@ function waves() {
           position: fixed;
           left: 0;
           bottom: 0;
-          width: 100vw;
+          width: 200vw;
           height: 120px;
           z-index: -1;
           pointer-events: none;
           overflow: hidden;
         }
         .waves {
-          width: 100vw;
-          height: 120px;
+          width: 150vw;
+          height: 150px;
           display: block;
         }
         .wave1,
@@ -37,7 +37,7 @@ function waves() {
       <div className="wave-container">
         <svg
           className="waves"
-          viewBox="0 0 1440 320"
+          viewBox="100 0 1440 400"
           preserveAspectRatio="none"
         >
           <path
