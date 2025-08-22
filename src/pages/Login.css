@@ -1,0 +1,181 @@
+/* Container holds the two panels side by side */
+.container {
+  display: flex;
+  max-width: 1000px;
+  height: 550px;
+  margin: 50px auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Left panel with blue gradient and wave shape */
+.left-panel {
+  flex: 1;
+  background: linear-gradient(135deg, #4a525a, #535c68); /* Use your original brand colors */
+  color: white;
+  padding: 3rem 2.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-panel h2 {
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* Decorative wave shape between panels */
+.left-panel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 150px;
+  height: 100%;
+  background: white;
+  border-radius: 80% 0 0 80%;
+  box-shadow: -20px 0 30px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+/* Left panel footer links */
+.footer-links {
+  margin-top: auto;
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Right panel with form */
+.right-panel {
+  flex: 1;
+  background: white;
+  padding: 3rem 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2; /* above the wave shape */
+  border-radius: 0 15px 15px 0;
+}
+
+.right-panel h2 {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.right-panel form label {
+  display: block;
+  margin: 0.5rem 0 0.2rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.right-panel form input[type="text"],
+.right-panel form input[type="email"],
+.right-panel form input[type="password"] {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1rem;
+  border: 1.5px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.right-panel form input:focus {
+  border-color: #535c68; /* your brand accent color */
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.checkbox input {
+  margin-right: 0.5rem;
+}
+
+.checkbox label a {
+  color: #535c68;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.checkbox label a:hover {
+  text-decoration: underline;
+}
+
+.btn-primary {
+  background-color: #535c68; /* brand purple */
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 0.8rem 0;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #95afc0;
+}
+
+.btn-secondary {
+  width: 100%;
+  padding: 0.7rem 0;
+  border: 1.5px solid #535c68;
+  color: #535c68;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  background: transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #535c68;
+  color: white;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .left-panel,
+  .right-panel {
+    border-radius: 15px;
+  }
+
+  .left-panel::after {
+    display: none;
+  }
+}

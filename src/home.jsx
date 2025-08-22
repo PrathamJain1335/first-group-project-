@@ -1,5 +1,5 @@
 import React from "react";
-import "./home.css";
+import "./Home.css";
 import Waves from "./components/waves.jsx";
 import Text from "./components/textanim.jsx";
 
