@@ -8,7 +8,7 @@ export default function Login() {
         <h2>Welcome to</h2>
         <div className="logo">🚀 Hello World</div>
         <p>
-          HELLO WORLD is a platform that allows you to chat with an AI
+          Hello World is a platform that allows you to chat with an AI
           assistant, get help with coding, and explore various topics. Join us
         </p>
         <div className="footer-links">
