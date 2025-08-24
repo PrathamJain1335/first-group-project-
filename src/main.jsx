@@ -1,10 +1,13 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import './pages/Login.css';     // Correct path to Login.css
-import Login from './pages/Login.jsx';  // Correct path to Login.jsx
+import { BrowserRouter } from 'react-router-dom';
+import App from './App.jsx';
+import './index.css'; // optional global styles
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Login />
-  </StrictMode>,
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </StrictMode>
 );

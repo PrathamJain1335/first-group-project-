@@ -7,12 +7,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color:#30336b;
+  background-color:#535c68;
   height: 50px;
 }
 
 .navbar-logo img {
-  height: 40px;
+  height: 150px;
 }
 
 .navbar-links {
@@ -30,7 +30,7 @@
 
 .navbar-links a:hover {
   text-decoration: underline;
-  color: cyan;
+  color: #c7ecee;
 
 }
 
@@ -38,9 +38,11 @@
     display: flex;
     gap: 1rem;
     color: white;
+    font-family: 'nunito' , sans-serif
 }
 .logreg a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-family: 'nunito' , sans-serif
 }

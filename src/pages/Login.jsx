@@ -1,18 +1,26 @@
 import React from "react";
 import "./Login.css";
+import HelloWorldLogo from "../assets/HelloWorld.png"; // your main logo
 
 export default function Login() {
   return (
     <div className="container">
       <div className="left-panel">
-        <h2>Welcome to</h2>
-        <div className="logo">🚀 Hello World</div>
+        <img src={HelloWorldLogo} alt="HelloWorld Logo" className="logo" />
+        <h2>Welcome to HelloWorld</h2>
         <p>
-          HELLO WORLD is a platform that allows you to chat with an AI
+<<<<<<< HEAD
+          Chat with AI, get coding help, and explore topics with a smart assistant.
+=======
+          Hello World is a platform that allows you to chat with an AI
           assistant, get help with coding, and explore various topics. Join us
+>>>>>>> 46f9016fba54b35351745246b0b4244b5136e3e6
         </p>
-        <div className="footer-links">
-          <a href="#">CREATOR HERE</a> | <a href="#">DESIGNER HERE</a>
+
+        <div className="icons">
+          <i className="fas fa-comments"></i>
+          <i className="fas fa-robot"></i>
+          <i className="fas fa-code"></i>
         </div>
       </div>
 
@@ -38,4 +46,3 @@ export default function Login() {
     </div>
   );
 }
-
