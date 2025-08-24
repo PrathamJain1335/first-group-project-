@@ -9,7 +9,12 @@ export default function Login() {
         <img src={HelloWorldLogo} alt="HelloWorld Logo" className="logo" />
         <h2>Welcome to HelloWorld</h2>
         <p>
+<<<<<<< HEAD
           Chat with AI, get coding help, and explore topics with a smart assistant.
+=======
+          Hello World is a platform that allows you to chat with an AI
+          assistant, get help with coding, and explore various topics. Join us
+>>>>>>> 46f9016fba54b35351745246b0b4244b5136e3e6
         </p>
 
         <div className="icons">
